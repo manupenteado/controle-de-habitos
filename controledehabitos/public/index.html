@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Aplicativo para controle de hábitos pessoais"
+    />
+    <!-- Pré-carregamento para melhor performance -->
+    <link rel="preload" href="%PUBLIC_URL%/logo192.png" as="image">
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    
+    <!-- Título personalizado -->
+    <title>Controle de Hábitos</title>
+
+    <!-- Pré-conexão para APIs externas (se necessário) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Google Fonts (exemplo - opcional) -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Estilos críticos inline (opcional) -->
+    <style>
+      body {
+        margin: 0;
+        font-family: 'Roboto', -apple-system, BlinkMacSystemFont, sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        background-color: #f5f5f5;
+      }
+      #root {
+        min-height: 100vh;
+      }
+    </style>
+  </head>
+  <body>
+    <noscript>
+      <div style="padding: 1rem; text-align: center;">
+        <h2>JavaScript necessário</h2>
+        <p>Este aplicativo requer JavaScript para funcionar corretamente.</p>
+        <p>Por favor, habilite o JavaScript no seu navegador.</p>
+      </div>
+    </noscript>
+    <div id="root"></div>
+    <!--
+      Configuração de fallback para SPA (opcional)
+      <script>
+        if (!window.reactAppLoaded) {
+          document.getElementById('root').innerHTML = `
+            <div style="padding: 2rem; text-align: center;">
+              <h2>Carregando o aplicativo...</h2>
+              <p>Se esta mensagem persistir, recarregue a página.</p>
+            </div>
+          `;
+        }
+      </script>
+    -->
+  </body>
+</html>
