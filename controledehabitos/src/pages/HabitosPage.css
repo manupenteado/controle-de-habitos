@@ -1,0 +1,67 @@
+.habitos-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 40px;
+  background: #f7f7f7;
+}
+
+.habitos-lista {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto 32px auto;
+  width: 100%;
+  max-width: 400px;
+}
+
+.habito-item {
+  background: #fff;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  padding: 16px;
+  text-align: center;
+  box-shadow: 0 2px 8px #0001;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.botoes-habito {
+  display: flex;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.novo-habito-section {
+  margin-top: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.novo-habito-btn {
+  padding: 10px 24px;
+  font-size: 16px;
+  margin-bottom: 16px;
+  cursor: pointer;
+}
+
+.novo-habito-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  background: #fff;
+  padding: 20px 24px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px #0001;
+}
+
+.dias-checkbox {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  justify-content: center;
+}

@@ -13,13 +13,12 @@ function LoginPage() {
     e.preventDefault();
     try {
       const response = await axios.post(
-        `${process.env.REACT_APP_API_URL}/users/login`,
+        `${process.env.REACT_APP_API_URL}users/login`,
         { email, password }
       );
       localStorage.setItem('token', response.data.token);
       navigate('/habitos');
     } catch (err) {
-      // Mostra mensagem específica do backend, se existir
       setError(err.response?.data?.message || 'Erro ao fazer login');
     }
   }
@@ -45,6 +44,12 @@ function LoginPage() {
         />
         <button type="submit">Entrar</button>
       </form>
+      <button
+        className="register-btn"
+        onClick={() => navigate('register')}
+      >
+        Cadastre-se
+      </button>
     </div>
   );
 }
